@@ -91,6 +91,20 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'mysql_testing' => [
+            'host' => env('DB_TEST_HOST', 'localhost'),
+            'port' => env('DB_TEST_PORT', '3306'),
+            'username' => env('DB_TEST_USERNAME', 'root'),
+            'password' => env('DB_TEST_PASSWORD', ''),
+            'database' => env('DB_TEST_DATABASE', 'testing'),
+            'driver' => 'mysql',
+            'prefix' => '',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'strict' => false,
+            'engine' => null,
+        ],
+
     ],
 
     /*
