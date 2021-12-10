@@ -87,7 +87,6 @@ jobs:
           command: |
             cp .env.example .env
             php artisan key:generate
-            php artisan passport:keys
             touch ./storage/logs/laravel.log
       # prepare the database
       #- run: touch storage/testing.sqlite
